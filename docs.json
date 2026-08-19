@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Gatherly",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -18,20 +18,46 @@
         ]
       }
     ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    "groups": [
+      {
+        "group": "Getting Started",
+        "pages": [
+          "index",
+          "quickstart"
+        ]
+      },
+      {
+        "group": "For Guests",
+        "icon": "ticket",
+        "pages": [
+          "guests/discover-events",
+          "guests/register",
+          "guests/waitlist",
+          "guests/online-events",
+          "guests/my-tickets"
+        ]
+      },
+      {
+        "group": "For Hosts",
+        "icon": "calendar-plus",
+        "pages": [
+          "hosts/create-an-event",
+          "hosts/capacity-and-visibility",
+          "hosts/dashboard",
+          "hosts/guest-list-and-check-in",
+          "hosts/share-your-event",
+          "hosts/edit-or-cancel"
+        ]
+      },
+      {
+        "group": "Reference",
+        "icon": "book",
+        "pages": [
+          "reference/glossary",
+          "reference/faq"
+        ]
+      }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -68,5 +94,6 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
-  }
+  },
+  "description": "Help documentation for Gatherly — discover free events, register in seconds, and host your own, in person or online."
 }
